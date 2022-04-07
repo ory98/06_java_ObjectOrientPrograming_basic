@@ -33,7 +33,15 @@ class Ex09_정답 {
 	}
 	
 	//문제 3)
-	void printWinner (int [] scores) {}
+	void printWinner (int [] scores) {
+		
+		int cnt = 0; 
+		for (int i = 0; i < scores.length; i++) {
+			if (scores[i] >= 60) cnt++;
+		}
+		System.out.println("합격자 수 : " + cnt + "명");
+		
+	}
 	
 	//문제 4)
 	void printScore1 (int [] scores) {}
